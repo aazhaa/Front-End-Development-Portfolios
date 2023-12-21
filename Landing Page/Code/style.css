@@ -1,8 +1,17 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Smooth Scrolling Styles */
 html {
     scroll-behavior: smooth;
 }
 
+/* Body styles */
 body {
     font-family: 'Outfit';
+    margin: 0; /* Remove default body margin */
 }
