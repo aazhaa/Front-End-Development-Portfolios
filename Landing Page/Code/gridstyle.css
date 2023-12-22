@@ -5,15 +5,22 @@
 
 .container {
   display: grid;
+  width: 1440px;
   height: 3800px;
   grid-template-rows: 0.1fr 2fr 2fr 2fr 1.5fr 1fr;
   grid-template-columns: repeat(12, 1fr);
   background-image: url('images/BingLandingPage.png');
+  background-size: cover; /* Adjust as needed */
 }
 
 body {
   font-family: 'Outfit';
+  display: flex;
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+  margin: 0; /* Remove default margin */
 }
+
 
 /* Style for demonstration purposes */
 div {
