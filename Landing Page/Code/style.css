@@ -12,6 +12,12 @@ html {
 
 /* Body styles */
 body {
+    display: grid;
     font-family: 'Outfit';
-    margin: 0; /* Remove default body margin */
+    grid-template-areas:
+        "header header header header header header header header header header header header"
+        "main main main main main main main main main main main main"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+    gap: 30px;
+    margin: 20px;
 }

@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  height: 3800px;
+  grid-template-rows: 0.1fr 2fr 2fr 2fr 1.5fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  background-image: url('images/BingLandingPage.png');
+}
+
+body {
+  font-family: 'Outfit';
+}
+
+/* Style for demonstration purposes */
+div {
+  border: black solid 1px;
+  text-align: center;
+}
+
+.Nav {
+  display: inline-flex;
+  justify-content: space-around;
+  grid-row: 1;
+  grid-column: span 12;
+  padding: 20px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 170px;
+  height: 27px;
+}
+
+/* Remove list-style and padding for the ul */
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+}
+
+li {
+  margin: 10px;
+  padding: 7px 15px 7px 15px;
+  border-radius: 30px; /* Add rounded corners for a softer look */
+}
+
+/* Purple shadow background on 'Try' item */
+#try {
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: rgba(12, 25, 70, 0.5); /* Purple color with 50% transparency */
+}
+
+#try:hover {
+  background-color: #800080; /* Purple color */
+}
+
+/* Hover effect on all list items */
+li:hover {
+  background-color: #dddddd27; /* Lighter background on hover */
+  cursor: pointer; /* Change cursor on hover for better UX */
+}
+
+a {
+  text-decoration: none;
+  color: #fff; /* Text color for better visibility */
+}
+
+
+.Home { grid-row: 2; grid-column: span 12; }
+.About { grid-row: 3; grid-column: span 12; }
+.Reviews { grid-row: 4; grid-column: span 12; }
+.Try { grid-row: 5; grid-column: span 12; }
+.Footer { grid-row: 6; grid-column: span 12; }
