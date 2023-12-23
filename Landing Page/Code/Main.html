@@ -22,107 +22,44 @@
     <meta name="twitter:title" content="Discover Bing">
     <meta name="twitter:description" content="Explore the features of Bing and invite others to join the experience.">
     <meta name="twitter:image" content="URL to an image for Twitter">
-
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+  
+  <link rel="stylesheet" href="StyleSheet.css">
+  <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <!-- Logo-->
-        <div class="micros-logo">
-            <img src="images/mLogo.png" alt="Microsoft Logo" width="150px">
-        </div>
+  
+  <!-- 12 columns in the grid -->
+  <div class="container">
+    <header class="Nav">
+      <div class="logo"><img src="images/mLogo.png" alt="Microsoft Logo"></div>
 
-        <!-- Navigation Menu -->
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#reviews">Reviews</a>
-            <a href="#try" id="try">Try</a>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li id="try"><a href="#try">Try</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Main Content Section -->
     <main>
-        <!-- Home Section -->
-        <section id="home">
-            <img src="images/BgPic.png" alt="3d Male Character showing search with 3d icons" width="500">
-            <h1>Discover Bing</h1>
-            <p>Universe of Information at Your Fingertips. With Bing, you get more than just search results; you get a comprehensive overview, diverse perspectives, and intuitive features. Bing is a search engine developed by Microsoft, providing a unique search experience with innovative features. Explore the features of Bing and invite others to join the experience.</p>
-        </section>
-
-        <!-- About Section -->
-        <section id="about">
-            <div>
-                <img src="images/char1.png" alt="3d Female Character" height="200px">
-                <img src="images/screen.png" alt="3d Screen" width="200px">
-            </div>
-            <div class="details-about">
-                <h1>Your Comprehensive Search Solution</h1>
-                <p>Bing is a fast, accurate, and user-friendly search engine that offers diverse content, from web pages to videos. It provides key information through rich snippets and knowledge panels, and unique features like visual search and Bing Rewards. Bing respects your privacy, supports multiple languages, and integrates seamlessly with other Microsoft products. Experience the Bing difference today!</p>
-                <button>Read More</button>
-            </div>
-        </section>
-
-        <!-- Reviews Section -->
-        <section id="reviews">
-            <h1>User Reviews</h1>
-            <img src="images/char4.png" alt="3d Male Character Talking on phone with icons" height="50px">
-            <p>Cards here....</p>
-        </section>
-
-        <!-- Additional Content-->
-        <section id="try">
-            <div>
-                <img src="images/char2.png" alt="3d Female Character" height="100px">
-                <img src="images/logo.png" alt="Bing Logo" height="100px">
-            </div>
-            <p>Ready to Discover? <button>Try Bing Now</button> or Download the Bing App Today!</p>
-        </section>
+      <section class="Home">
+        <img src="images/BgPic.png" alt="3d Male Character showing search with 3d icons" width="800">
+        <h1>Discover Bing</h1>
+        <p>Universe of Information at Your Fingertips. With Bing, you get more than just search results; you get a comprehensive overview, diverse perspectives, and intuitive features. Bing is a search engine developed by Microsoft, providing a unique search experience with innovative features. Explore the features of Bing and invite others to join the experience.
+        </p>
+      </section>
+      <section class="About">About</section>
+      <section class="Reviews">Reviews</section>
+      <section class="Try">Try</section>
     </main>
 
-    <!-- Footer Section -->
-    <footer>
-        <!-- Footer Content -->
-        <img src="images/mLogo.png" alt="Microsoft Logo" width="100px">
-        <form>
-            <input type="text" id="email" name="userEmail" placeholder="Enter your email">
-            <button type="submit">Subscribe</button>
-        </form>
-        
-        <div class="footer-column">
-            <h3>Landing Page</h3>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#reviews">Reviews</a></li>
-              <li><a href="#try">Try</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-column">
-            <h3>Legal</h3>
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms of Service</a>
-        </div>
-    
-        <div class="footer-column">
-            <h3>Follow Us</h3>
-            <a href="#Twitter">Twitter</a>
-            <a href="#facebook">Facebook</a>
-            <a href="#Instagram">Instagram</a>
-        </div>
-    
-        <div class="footer-column">
-            <h3>Contact Us</h3>
-            <p>Email: support@bing.com<br>
-                Phone: 1-800-123-4567</p>
-        </div>
-
-        <div class="line">_________________________________</div>
-        <p>© All rights reserved 2023</p>
-    </footer>
+    <footer>Footer</footer>
+  </div>
 
 </body>
 </html>
